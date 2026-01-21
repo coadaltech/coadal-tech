@@ -2,6 +2,7 @@
 
 import AnimatedBackground from "../../components/AnimatedBackground"
 import { useRouter } from "next/navigation";
+import Head from "next/head"
 import { SmoothCard, SmoothButton } from "../../components/SmoothAnimations"
 import { useScrollAnimation, fadeInUp, fadeInLeft, fadeInRight, staggerContainer, AnimatedSection, AnimatedDiv, AnimatedH2, AnimatedP } from "../../hooks/useScrollAnimation"
 import { Smartphone, Code, Zap, Shield, Users, ArrowRight, CheckCircle, Layers, Star, Globe, Award, Cpu, Palette } from "lucide-react"
@@ -141,8 +142,20 @@ export default function FlutterDevelopmentPage() {
 
   return (
     <Fragment>
-    <div className="text-white overflow-hidden">
-      <AnimatedBackground />
+      <Head>
+        <title>Flutter App Development Company USA | Web & Mobile Experts – Coadal</title>
+        <meta name="description" content="Coadal is a top Flutter development company in USA delivering custom web & mobile apps with beautiful UI. Hire Flutter experts for faster delivery. Free project assessment!" />
+        <meta property="og:title" content="Flutter App Development Company USA | Web & Mobile Experts – Coadal" />
+        <meta property="og:description" content="Coadal is a top Flutter development company in USA delivering custom web & mobile apps with beautiful UI. Hire Flutter experts for faster delivery. Free project assessment!" />
+        <meta property="og:url" content="https://www.coadal.com/services/flutter" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Flutter App Development Company USA | Web & Mobile Experts – Coadal" />
+        <meta name="twitter:description" content="Coadal is a top Flutter development company in USA delivering custom web & mobile apps with beautiful UI. Hire Flutter experts for faster delivery. Free project assessment!" />
+        <link rel="canonical" href="https://www.coadal.com/services/flutter" />
+      </Head>
+      <div className="text-white overflow-hidden">
+        <AnimatedBackground />
        
       
       <div className="relative z-10">
@@ -496,7 +509,7 @@ export default function FlutterDevelopmentPage() {
           </div>
         </AnimatedSection>
       </div>
-    </div>
+      </div>
     </Fragment>
   )
 }

@@ -2,6 +2,7 @@
 
 import AnimatedBackground from "../../components/AnimatedBackground"
 import { useRouter } from "next/navigation";
+import Head from "next/head"
 import { SmoothCard, SmoothButton } from "../../components/SmoothAnimations"
 import { useScrollAnimation, fadeInUp, fadeInLeft, fadeInRight, staggerContainer, AnimatedSection, AnimatedDiv, AnimatedH2, AnimatedP } from "../../hooks/useScrollAnimation"
 import { Smartphone, Code, Zap, Shield, Users, ArrowRight, CheckCircle, Layers, Star, Globe, Award } from "lucide-react"
@@ -116,8 +117,20 @@ export default function AndroidDevelopmentPage() {
 
   return (
     <Fragment>
-    <div className="text-white overflow-hidden">
-      <AnimatedBackground />
+      <Head>
+        <title>Android App Development Company USA | Kotlin & Java Experts – Coadal</title>
+        <meta name="description" content="Coadal is the best Android app development company in USA offering custom Kotlin & Java apps with stunning design. 10+ years experience. Hire certified Android developers now!" />
+        <meta property="og:title" content="Android App Development Company USA | Kotlin & Java Experts – Coadal" />
+        <meta property="og:description" content="Coadal is the best Android app development company in USA offering custom Kotlin & Java apps with stunning design. 10+ years experience. Hire certified Android developers now!" />
+        <meta property="og:url" content="https://www.coadal.com/services/android-development" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Android App Development Company USA | Kotlin & Java Experts – Coadal" />
+        <meta name="twitter:description" content="Coadal is the best Android app development company in USA offering custom Kotlin & Java apps with stunning design. 10+ years experience. Hire certified Android developers now!" />
+        <link rel="canonical" href="https://www.coadal.com/services/android-development" />
+      </Head>
+      <div className="text-white overflow-hidden">
+        <AnimatedBackground />
        
       
       <div className="relative z-10">
@@ -431,7 +444,7 @@ export default function AndroidDevelopmentPage() {
           </div>
         </AnimatedSection>
       </div>
-    </div>
+      </div>
     </Fragment>
   )
 }

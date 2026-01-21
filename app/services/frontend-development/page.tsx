@@ -2,6 +2,7 @@
 
 import AnimatedBackground from "../../components/AnimatedBackground"
 import { useRouter } from "next/navigation";
+import Head from "next/head"
 import { SmoothCard, SmoothButton } from "../../components/SmoothAnimations"
 import { useScrollAnimation, fadeInUp, fadeInLeft, fadeInRight, staggerContainer, AnimatedSection, AnimatedDiv, AnimatedH2, AnimatedP } from "../../hooks/useScrollAnimation"
 import { Code, Palette, Smartphone, Zap, Shield, Users, ArrowRight, CheckCircle, Monitor, Layers, Sparkles } from "lucide-react"
@@ -100,8 +101,20 @@ export default function FrontendDevelopmentPage() {
 
   return (
     <Fragment>
-    <div className="text-white overflow-hidden">
-      <AnimatedBackground />
+      <Head>
+        <title>Frontend Development Company USA | Angular & React – Coadal</title>
+        <meta name="description" content="Coadal is a modern frontend development company in USA delivering responsive Angular & React interfaces with stunning UX. Hire expert frontend developers. Get project estimate!" />
+        <meta property="og:title" content="Frontend Development Company USA | Angular & React – Coadal" />
+        <meta property="og:description" content="Coadal is a modern frontend development company in USA delivering responsive Angular & React interfaces with stunning UX. Hire expert frontend developers. Get project estimate!" />
+        <meta property="og:url" content="https://www.coadal.com/services/frontend-development" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Frontend Development Company USA | Angular & React – Coadal" />
+        <meta name="twitter:description" content="Coadal is a modern frontend development company in USA delivering responsive Angular & React interfaces with stunning UX. Hire expert frontend developers. Get project estimate!" />
+        <link rel="canonical" href="https://www.coadal.com/services/frontend-development" />
+      </Head>
+      <div className="text-white overflow-hidden">
+        <AnimatedBackground />
        
       
       <div className="relative z-10">
@@ -353,7 +366,7 @@ export default function FrontendDevelopmentPage() {
           </div>
         </AnimatedSection>
       </div>
-    </div>
+      </div>
     </Fragment>
   )
 }

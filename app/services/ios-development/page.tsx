@@ -1,6 +1,7 @@
 "use client"
 
 import AnimatedBackground from "../../components/AnimatedBackground"
+import Head from "next/head"
 import { SmoothCard, SmoothButton } from "../../components/SmoothAnimations"
 import { useScrollAnimation, fadeInUp, fadeInLeft, fadeInRight, staggerContainer, AnimatedSection, AnimatedDiv, AnimatedH2, AnimatedP } from "../../hooks/useScrollAnimation"
 import { Smartphone, Apple, Zap, Shield, Users, ArrowRight, CheckCircle, Code, Layers, Star, Globe, Award } from "lucide-react"
@@ -105,8 +106,20 @@ export default function iOSDevelopmentPage() {
 
   return (
     <Fragment>
-    <div className="text-white overflow-hidden">
-      <AnimatedBackground />
+      <Head>
+        <title>Best iOS App Development Company USA | Swift Experts – Coadal</title>
+        <meta name="description" content="Coadal is a leading iOS app development company in USA delivering enterprise-grade iPhone & iPad apps using Swift. Hire expert iOS developers. Free consultation & quote!" />
+        <meta property="og:title" content="Best iOS App Development Company USA | Swift Experts – Coadal" />
+        <meta property="og:description" content="Coadal is a leading iOS app development company in USA delivering enterprise-grade iPhone & iPad apps using Swift. Hire expert iOS developers. Free consultation & quote!" />
+        <meta property="og:url" content="https://www.coadal.com/services/ios-development" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best iOS App Development Company USA | Swift Experts – Coadal" />
+        <meta name="twitter:description" content="Coadal is a leading iOS app development company in USA delivering enterprise-grade iPhone & iPad apps using Swift. Hire expert iOS developers. Free consultation & quote!" />
+        <link rel="canonical" href="https://www.coadal.com/services/ios-development" />
+      </Head>
+      <div className="text-white overflow-hidden">
+        <AnimatedBackground />
        
       
       <div className="relative z-10">
@@ -386,7 +399,7 @@ export default function iOSDevelopmentPage() {
           </div>
         </AnimatedSection>
       </div>
-    </div>
+      </div>
     </Fragment>
   )
 }

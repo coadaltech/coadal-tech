@@ -2,6 +2,7 @@
 
 import AnimatedBackground from "../../components/AnimatedBackground"
 import { useRouter } from "next/navigation";
+import Head from "next/head"
 import { ShoppingCart, CreditCard, Package, BarChart3, Shield, Users, ArrowRight, CheckCircle, Smartphone, Globe, Zap, Lock } from "lucide-react"
 
 const features = [
@@ -134,8 +135,21 @@ const securityFeatures = [
 export default function EcommerceDevelopmentPage() {
   const router = useRouter();
   return (
-    <div className="text-white overflow-hidden">
-      <AnimatedBackground />
+    <>
+      <Head>
+        <title>Ecommerce Development Company USA | Shopify & WooCommerce – Coadal</title>
+        <meta name="description" content="Coadal is a premier ecommerce development company in USA offering custom B2B & B2C platforms, Shopify stores & seamless integrations. Boost sales by 50%. Get free demo!" />
+        <meta property="og:title" content="Ecommerce Development Company USA | Shopify & WooCommerce – Coadal" />
+        <meta property="og:description" content="Coadal is a premier ecommerce development company in USA offering custom B2B & B2C platforms, Shopify stores & seamless integrations. Boost sales by 50%. Get free demo!" />
+        <meta property="og:url" content="https://www.coadal.com/services/ecommerce-development" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ecommerce Development Company USA | Shopify & WooCommerce – Coadal" />
+        <meta name="twitter:description" content="Coadal is a premier ecommerce development company in USA offering custom B2B & B2C platforms, Shopify stores & seamless integrations. Boost sales by 50%. Get free demo!" />
+        <link rel="canonical" href="https://www.coadal.com/services/ecommerce-development" />
+      </Head>
+      <div className="text-white overflow-hidden">
+        <AnimatedBackground />
        
       
       <div className="relative z-10">
@@ -380,6 +394,7 @@ export default function EcommerceDevelopmentPage() {
           </div>
         </section>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

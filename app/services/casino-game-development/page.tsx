@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Head from 'next/head'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AnimatedBackground from '../../components/AnimatedBackground'
@@ -85,8 +86,21 @@ export default function CasinoGameDevelopment() {
   }, [])
 
   return (
-    <div className="relative min-h-screen bg-black/60 overflow-x-hidden pt-20">
-      <AnimatedBackground />
+    <>
+      <Head>
+        <title>Casino Game Development Company USA | Online Casino Software – Coadal</title>
+        <meta name="description" content="Coadal is a premier casino game development company in USA offering white-label solutions, slot games & online casino software. Certified developers. Request pricing now!" />
+        <meta property="og:title" content="Casino Game Development Company USA | Online Casino Software – Coadal" />
+        <meta property="og:description" content="Coadal is a premier casino game development company in USA offering white-label solutions, slot games & online casino software. Certified developers. Request pricing now!" />
+        <meta property="og:url" content="https://www.coadal.com/services/casino-game-development" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Casino Game Development Company USA | Online Casino Software – Coadal" />
+        <meta name="twitter:description" content="Coadal is a premier casino game development company in USA offering white-label solutions, slot games & online casino software. Certified developers. Request pricing now!" />
+        <link rel="canonical" href="https://www.coadal.com/services/casino-game-development" />
+      </Head>
+      <div className="relative min-h-screen bg-black/60 overflow-x-hidden pt-20">
+        <AnimatedBackground />
 
       <main className="relative z-10 pt-24 pb-12 px-4 md:px-8">
 
@@ -376,6 +390,7 @@ export default function CasinoGameDevelopment() {
         </section>
 
       </main>
-    </div>
+      </div>
+    </>
   )
 }

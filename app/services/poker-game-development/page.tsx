@@ -2,6 +2,7 @@
 "use client"
 import AnimatedBackground from "../../components/AnimatedBackground"
 import { useEffect, useRef } from "react"
+import Head from "next/head"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import {
@@ -136,8 +137,21 @@ export default function PokerGameDevelopment() {
   }, [])
 
   return (
-    <div className="relative min-h-screen bg-black/50 overflow-x-hidden pt-20">
-      <AnimatedBackground />
+    <>
+      <Head>
+        <title>Poker Game Development Company USA | Real Money Poker Apps – Coadal</title>
+        <meta name="description" content="Coadal is an expert poker game development company in USA providing custom poker apps, real money solutions & secure platforms. Hire certified developers. Free consultation available!" />
+        <meta property="og:title" content="Poker Game Development Company USA | Real Money Poker Apps – Coadal" />
+        <meta property="og:description" content="Coadal is an expert poker game development company in USA providing custom poker apps, real money solutions & secure platforms. Hire certified developers. Free consultation available!" />
+        <meta property="og:url" content="https://www.coadal.com/services/poker-game-development" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Poker Game Development Company USA | Real Money Poker Apps – Coadal" />
+        <meta name="twitter:description" content="Coadal is an expert poker game development company in USA providing custom poker apps, real money solutions & secure platforms. Hire certified developers. Free consultation available!" />
+        <link rel="canonical" href="https://www.coadal.com/services/poker-game-development" />
+      </Head>
+      <div className="relative min-h-screen bg-black/50 overflow-x-hidden pt-20">
+        <AnimatedBackground />
 
       <main className="relative z-10 pt-24 pb-12 px-4 md:px-8">
         {/* Hero Section - Casino Table Theme */}
@@ -588,6 +602,7 @@ export default function PokerGameDevelopment() {
           </div>
         </section>
       </main>
-    </div>
+      </div>
+    </>
   )
 }

@@ -2,6 +2,7 @@
 
 import AnimatedBackground from "../../components/AnimatedBackground"
 import { useRouter } from "next/navigation";
+import Head from "next/head"
 import { Code, Database, Globe, Zap, Shield, Users, ArrowRight, CheckCircle, Layers, Server, Monitor, Cloud } from "lucide-react"
 
 const features = [
@@ -118,8 +119,21 @@ const techStack = {
 export default function FullStackDevelopmentPage() {
   const router = useRouter();
   return (
-    <div className="text-white overflow-hidden">
-      <AnimatedBackground />
+    <>
+      <Head>
+        <title>Full Stack Development Company USA | MERN & MEAN Stack – Coadal</title>
+        <meta name="description" content="Coadal is an expert full stack development company in USA delivering end-to-end MERN & MEAN stack solutions. Scalable and secure applications. Hire developers today!" />
+        <meta property="og:title" content="Full Stack Development Company USA | MERN & MEAN Stack – Coadal" />
+        <meta property="og:description" content="Coadal is an expert full stack development company in USA delivering end-to-end MERN & MEAN stack solutions. Scalable and secure applications. Hire developers today!" />
+        <meta property="og:url" content="https://www.coadal.com/services/fullstack-development" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Full Stack Development Company USA | MERN & MEAN Stack – Coadal" />
+        <meta name="twitter:description" content="Coadal is an expert full stack development company in USA delivering end-to-end MERN & MEAN stack solutions. Scalable and secure applications. Hire developers today!" />
+        <link rel="canonical" href="https://www.coadal.com/services/fullstack-development" />
+      </Head>
+      <div className="text-white overflow-hidden">
+        <AnimatedBackground />
        
       
       <div className="relative z-10">
@@ -344,7 +358,7 @@ export default function FullStackDevelopmentPage() {
           </div>
         </section>
       </div>
-      
-    </div>
+      </div>
+    </>
   )
 }

@@ -2,6 +2,7 @@
 
 import AnimatedBackground from "../../components/AnimatedBackground"
 import { useRouter } from "next/navigation";
+import Head from "next/head"
 import { Database, Server, Shield, Zap, Cloud, Code, ArrowRight, CheckCircle, Lock, Cpu, Network, Layers } from "lucide-react"
 
 const features = [
@@ -111,8 +112,21 @@ const architectureFeatures = [
 export default function BackendDevelopmentPage() {
   const router = useRouter();
   return (
-    <div className="text-white overflow-hidden">
-      <AnimatedBackground />
+    <>
+      <Head>
+        <title>Backend Development Company USA | Node.js & Python – Coadal</title>
+        <meta name="description" content="Coadal is a top backend development company in USA providing custom APIs, Node.js & Python solutions with secure, scalable infrastructure. Hire backend developers. Free audit!" />
+        <meta property="og:title" content="Backend Development Company USA | Node.js & Python – Coadal" />
+        <meta property="og:description" content="Coadal is a top backend development company in USA providing custom APIs, Node.js & Python solutions with secure, scalable infrastructure. Hire backend developers. Free audit!" />
+        <meta property="og:url" content="https://www.coadal.com/services/backend-development" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Backend Development Company USA | Node.js & Python – Coadal" />
+        <meta name="twitter:description" content="Coadal is a top backend development company in USA providing custom APIs, Node.js & Python solutions with secure, scalable infrastructure. Hire backend developers. Free audit!" />
+        <link rel="canonical" href="https://www.coadal.com/services/backend-development" />
+      </Head>
+      <div className="text-white overflow-hidden">
+        <AnimatedBackground />
        
       
       <div className="relative z-10">
@@ -327,6 +341,7 @@ export default function BackendDevelopmentPage() {
           </div>
         </section>
       </div>
-    </div>
+      </div>
+    </>
   )
 }
