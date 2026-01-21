@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import AnimatedBackground from "./components/AnimatedBackground"
 import Navigation from "./components/Navigation"
@@ -17,6 +18,9 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_TITLE}`
   },
   description: SITE_DESCRIPTION,
+  verification: {
+    google: 'ElySccXE-qzDvdfekqRR94qGfBdb0LCoX_FgPIh5iy8',
+  },
   robots: {
     index: true,
     follow: true,
@@ -68,6 +72,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-R2T28E77NX"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R2T28E77NX');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
         <AnimatedBackground />
         <Navigation />
